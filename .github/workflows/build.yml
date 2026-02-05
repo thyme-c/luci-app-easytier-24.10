@@ -5,11 +5,11 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: '2.4.5-WRT24.10.4'
+        description: '2.4.5-WRT21.02'
         required: false
         default: ''
       text:
-        description: 'ImmortalWrt 24.10.4自用'
+        description: 'ImmortalWrt 21.02'
         required: false
         default: ''
 concurrency:
@@ -31,8 +31,7 @@ jobs:
           - aarch64_cortex-a53
           
         sdk:
-          - 24.10.4
-          - SNAPSHOT
+          - 21.02-SNAPSHOT
 
     steps:
       - uses: actions/checkout@v5
